@@ -33,6 +33,10 @@ button {
     flex flex-col items-center justify-between rounded-md;
 }
 
+#first .square-card {
+    @apply w-full max-w-full h-full;
+}
+
 .icon-box {
     @apply -top-10 rounded-full grid place-items-center absolute w-20 h-20 p-1;
 
