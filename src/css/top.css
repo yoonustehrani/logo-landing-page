@@ -1,3 +1,47 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: Vazir;
+    src: url(/src/fonts/Vazirmatn.ttf);
+}
+
+html {
+    @apply w-full h-full;
+}
+
+body {
+    text-align: right;
+    direction: rtl;
+    @apply w-full h-full overflow-x-hidden overflow-y-auto;
+}
+a {
+    @apply duration-300 hover:text-dark-violet hover:fill-dark-violet;
+}
+nav li > a {
+    @apply p-2 duration-300 hover:text-light-violet text-gray-900 text-lg;
+}
+button {
+    @apply px-4 py-1 rounded-lg duration-300;
+}
+
+.square-card {
+    @apply relative w-1/3 grow md:w-1/4 xl:grow-0 max-w-[50%] md:max-w-[34%] xl:w-1/5 h-auto aspect-[4/3] py-3 px-6
+    shadow-md border border-black/5
+    text-center text-xl pt-14 pb-4 gap-4
+    flex flex-col items-center justify-between rounded-md;
+}
+
+.icon-box {
+    @apply -top-10 rounded-full grid place-items-center absolute w-20 h-20 p-1;
+
+    > span {
+        @apply rounded-full block w-full h-full p-4 border border-black/5;
+    }
+}
+
+.order-button {
+    @apply  hover:bg-apricate text-yellow-900 bg-antique-white rounded-full text-sm;
+    /*  hover:bg-earth-yellow */
+}
