@@ -25,7 +25,7 @@ jobs:
   deploy:
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      # url: https://yoonustehrani.github.io/logo-landing-page/
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
