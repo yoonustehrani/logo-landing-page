@@ -49,3 +49,23 @@ button {
     @apply  hover:bg-apricate text-yellow-900 bg-antique-white rounded-full text-sm;
     /*  hover:bg-earth-yellow */
 }
+
+.top-lad {
+    @apply absolute -top-9 right-0 w-36 h-9 rounded-tr-xl bg-inherit text-sm bg-ghost-white flex overflow-hidden;
+     > span {
+        @apply z-40 absolute top-2 right-2 flex justify-center items-center w-20 rounded-full;
+     }
+}
+/* pl-10 pr-2 */
+
+.top-lad::after {
+    content: '';
+    box-shadow: 10px 10px 0 var(--tw-shadow-color);
+    @apply w-12 bg-inherit rounded-br-3xl h-full;
+}
+
+.top-lad::before {
+    content: '';
+    @apply w-auto grow h-full rounded-t-xl;
+    /* @apply absolute top-0 left-0 w-12 h-8 bg-ghost-white rounded-br-3xl; */
+}
