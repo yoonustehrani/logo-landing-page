@@ -51,7 +51,10 @@ button {
 }
 
 .top-lad {
-    @apply absolute -top-8 right-0 w-36 h-8 rounded-tr-xl bg-inherit text-sm bg-ghost-white flex overflow-hidden;
+    @apply absolute -top-9 right-0 w-36 h-9 rounded-tr-xl bg-inherit text-sm bg-ghost-white flex overflow-hidden;
+     > span {
+        @apply z-40 absolute top-2 right-2 flex justify-center items-center w-20 rounded-full;
+     }
 }
 /* pl-10 pr-2 */
 
